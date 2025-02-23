@@ -1,0 +1,18 @@
+/* bugSolution.css */
+
+/* More specific selector to override conflicting styles */
+#myElement.myClass {
+  color: blue; /* This will now override the previous conflicting color */
+}
+
+/* Or, adjust general class to ensure that it does not conflict */
+.myClass {
+  color: green;
+}
+
+/* Or, use !important (Use sparingly! This is a less elegant approach) */
+.myClass {
+  color: red !important; /*Avoid this approach if possible*/
+}
+
+/* Always aim to write CSS in a way that avoids conflicting selectors. Using a more specific selector is often preferred to using !important */
